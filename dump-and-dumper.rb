@@ -5,11 +5,11 @@
 class DumpAndDumper < Formula
   desc ""
   homepage "https://github.com/Thomascogez/dump-and-dumper"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
-    url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.0/dump-and-dumper_1.0.0_darwin_all.tar.gz"
-    sha256 "f97326b0b0c003e546cd1ba8c1ebdbd222d188db46e17a1c135b09b5c23ce49c"
+    url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.1/dump-and-dumper_1.0.1_darwin_all.tar.gz"
+    sha256 "6d1e401a3306925e1b78f4c93e2ca88902cc0865a97e443923c1ccd5923c33fa"
 
     def install
       bin.install "dump-and-dumper"
@@ -18,16 +18,16 @@ class DumpAndDumper < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.0/dump-and-dumper_1.0.0_linux_arm64.tar.gz"
-      sha256 "09e04d93e059bb39a0de6f21c07f8daa9b4896637ab15bc71128bc0bc091a230"
+      url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.1/dump-and-dumper_1.0.1_linux_arm64.tar.gz"
+      sha256 "ce8ec10681beff420d5e76f94643b84085d7504cae9adda75d0d5649035644b7"
 
       def install
         bin.install "dump-and-dumper"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.0/dump-and-dumper_1.0.0_linux_amd64.tar.gz"
-      sha256 "957a56502947d9b0697e07e389a3df87ef47bf668f4f08127252ad5794376b48"
+      url "https://github.com/Thomascogez/dump-and-dumper/releases/download/v1.0.1/dump-and-dumper_1.0.1_linux_amd64.tar.gz"
+      sha256 "010a69f0ce80f685f58306a21f54fd35565e89d59d2a404b894fd964c8a1c3e9"
 
       def install
         bin.install "dump-and-dumper"
